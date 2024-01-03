@@ -1,0 +1,53 @@
+[
+  {
+    "kind": "column",
+    "name": "Speed",
+    "description": "Calculate pikmin's speed to carry a item.",
+    "author": "nimzo6689",
+    "params": [
+      {
+        "name": "itemName",
+        "displayName": "ItemName",
+        "type": "string"
+      },
+      {
+        "name": "weight",
+        "displayName": "Weight",
+        "type": "number"
+      },
+      {
+        "name": "maximumCarryNo",
+        "displayName": "MaximumCarryNo",
+        "type": "number"
+      },
+      {
+        "name": "pikminType",
+        "displayName": "PikminType",
+        "type": "Array"
+      },
+      {
+        "name": "pikminSpeed",
+        "displayName": "PikminSpeed",
+        "type": "Array"
+      },
+      {
+        "name": "pikminNo",
+        "displayName": "PikminNo",
+        "type": "Array"
+      },
+      {
+        "name": "pikminMaturity",
+        "displayName": "PikminMaturity",
+        "type": "Array"
+      },
+      {
+        "name": "pikminSpicy",
+        "displayName": "PikminSpicy",
+        "type": "Array"
+      }
+    ],
+    "result": {
+      "type": "number"
+    }
+  }
+]
