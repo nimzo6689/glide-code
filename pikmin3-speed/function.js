@@ -1,3 +1,5 @@
+// https://www.pikminwiki.com/carry
+
 window.function = function (
   itemName,
   weight,
@@ -18,11 +20,12 @@ window.function = function (
     };
   });
 
-  const allPikminCount = pikmins.map((it) => it.count).reduce((a, x) => a + x);
-  if (weight.value < allPikminCount) {
+  const allPikminPower = pikmins.map((it) => (it.type === "紫" ? it.count * 10 : it.count)).reduce((a, x) => a + x);
+  if (weight.value > allPikminPower) {
     return 0;
   }
 
+  const allPikminCount = pikmins.map((it) => it.count).reduce((a, x) => a + x);
   const wingedPikminCount = pikmins
     .fileter((it) => it.type === "羽")
     .map((it) => it.count)
@@ -39,7 +42,7 @@ window.function = function (
     花: 1.0,
   };
 
-  if (itemName.value in ["キンカイ", "ムラサキタワワ"]) {
+  if (itemName.value in ["キンカイ", "ムラサキタワワ", "ミドリタワワ"]) {
     if (pikmins[0].isSpicy === "あり" || pikmins[0].type === "白") {
       return 4;
     }
@@ -47,5 +50,5 @@ window.function = function (
   }
 
   const allPikminSpeed = pikmins.map((it) => it.speed + maturitySpeed[it.maturity]).reduce((a, x) => a + x);
-  return (allPikminSpeed - weight.value + 1) / maxCarryCount.value + 1
+  return (allPikminSpeed - weight.value + 1) / maxCarryCount.value + 1;
 };
