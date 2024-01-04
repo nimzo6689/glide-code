@@ -1,3 +1,12 @@
-window.function = function (itemName, weight, maximumCarryNo) {
+window.function = function (
+  itemName,
+  weight,
+  maxCarryCount,
+  pikminType,
+  pikminSpeed,
+  pikminCount,
+  pikminMaturity,
+  pikminSpicy
+) {
   return weight.value + maximumCarryNo.value;
-}
+};
