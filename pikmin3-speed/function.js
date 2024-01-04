@@ -1,6 +1,5 @@
 window.function = function(
-  itemName, weight, maximumCarryNo, pikminType,
-  pikminSpeed, pikminNo, pikminMaturity, pikminSpicy) {
+  itemName, weight, maximumCarryNo) {
 
   return weight + maximumCarryNo;
 }
