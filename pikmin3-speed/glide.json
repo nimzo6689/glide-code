@@ -7,12 +7,17 @@
     "params": [
       {
         "name": "itemName",
-        "displayName": "ItemName",
+        "displayName": "itemName",
         "type": "string"
       },
       {
         "name": "weight",
-        "displayName": "Weight",
+        "displayName": "weight",
+        "type": "number"
+      },
+      {
+        "name": "maxCarryCount",
+        "displayName": "maxCarryCount",
         "type": "number"
       },
       {
@@ -24,9 +29,36 @@
         }
       },
       {
-        "name": "maxCarryCount",
-        "displayName": "MaxCarryCount",
-        "type": "number"
+        "name": "pikminSpeed",
+        "displayName": "pikminSpeed",
+        "type": {
+          "kind": "array",
+          "items": "number"
+        }
+      },
+      {
+        "name": "pikminCount",
+        "displayName": "pikminCount",
+        "type": {
+          "kind": "array",
+          "items": "number"
+        }
+      },
+      {
+        "name": "pikminMaturity",
+        "displayName": "pikminMaturity",
+        "type": {
+          "kind": "array",
+          "items": "string"
+        }
+      },
+      {
+        "name": "pikminSpicy",
+        "displayName": "pikminSpicy",
+        "type": {
+          "kind": "array",
+          "items": "string"
+        }
       }
     ],
     "result": {
