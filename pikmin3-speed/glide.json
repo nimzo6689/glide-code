@@ -7,17 +7,17 @@
     "params": [
       {
         "name": "itemName",
-        "displayName": "itemName",
+        "displayName": "ItemName",
         "type": "string"
       },
       {
         "name": "weight",
-        "displayName": "weight",
+        "displayName": "Weight",
         "type": "number"
       },
       {
         "name": "maxCarryCount",
-        "displayName": "maxCarryCount",
+        "displayName": "MaxCarryCount",
         "type": "number"
       }
     ],
