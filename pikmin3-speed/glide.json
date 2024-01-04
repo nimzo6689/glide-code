@@ -7,18 +7,43 @@
     "params": [
       {
         "name": "itemName",
-        "displayName": "ItemName",
+        "displayName": "itemName",
         "type": "string"
       },
       {
         "name": "weight",
-        "displayName": "Weight",
+        "displayName": "weight",
         "type": "number"
       },
       {
-        "name": "maximumCarryNo",
-        "displayName": "MaximumCarryNo",
+        "name": "maxCarryCount",
+        "displayName": "maxCarryCount",
         "type": "number"
+      },
+      {
+        "name": "pikminType",
+        "displayName": "pikminType",
+        "type": "array"
+      },
+      {
+        "name": "pikminSpeed",
+        "displayName": "pikminSpeed",
+        "type": "array"
+      },
+      {
+        "name": "pikminCount",
+        "displayName": "pikminCount",
+        "type": "array"
+      },
+      {
+        "name": "pikminMaturity",
+        "displayName": "pikminMaturity",
+        "type": "array"
+      },
+      {
+        "name": "pikminSpicy",
+        "displayName": "pikminSpicy",
+        "type": "array"
       }
     ],
     "result": {
