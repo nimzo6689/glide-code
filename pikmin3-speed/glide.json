@@ -16,17 +16,17 @@
         "type": "number"
       },
       {
-        "name": "maxCarryCount",
-        "displayName": "MaxCarryCount",
-        "type": "number"
-      },
-      {
         "name": "pikminType",
         "displayName": "pikminType",
         "type": {
           "kind": "array",
           "items": "string"
         }
+      },
+      {
+        "name": "maxCarryCount",
+        "displayName": "MaxCarryCount",
+        "type": "number"
       }
     ],
     "result": {
