@@ -33,7 +33,7 @@ window.function = function (
     return -1;
   }
 
-  maturitySpeed = {
+  const maturitySpeed = {
     葉っぱ: 0.0,
     つぼみ: 0.5,
     花: 1.0,
