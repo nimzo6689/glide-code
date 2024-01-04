@@ -1,8 +1,7 @@
 window.function = function (
   itemName,
   weight,
-  maxCarryCount,
-  pikminType
+  maxCarryCount
 ) {
   return weight.value + maxCarryCount.value;
 };
