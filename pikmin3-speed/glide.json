@@ -1,24 +1,49 @@
 [
   {
     "kind": "column",
-    "name": "Speed",
+    "name": "運搬速度",
     "description": "Calculate pikmin's speed to carry a item.",
     "author": "nimzo6689",
     "params": [
       {
         "name": "itemName",
-        "displayName": "ItemName",
+        "displayName": "アイテム名",
         "type": "string"
       },
       {
         "name": "weight",
-        "displayName": "Weight",
+        "displayName": "重さ",
         "type": "number"
       },
       {
-        "name": "maximumCarryNo",
-        "displayName": "MaximumCarryNo",
+        "name": "maxCarryCount",
+        "displayName": "最大運搬数",
         "type": "number"
+      },
+      {
+        "name": "pikminType",
+        "displayName": "ピクミンの種類",
+        "type": "array"
+      },
+      {
+        "name": "pikminSpeed",
+        "displayName": "速さ",
+        "type": "array"
+      },
+      {
+        "name": "pikminCount",
+        "displayName": "匹数",
+        "type": "array"
+      },
+      {
+        "name": "pikminMaturity",
+        "displayName": "成熟度",
+        "type": "array"
+      },
+      {
+        "name": "pikminSpicy",
+        "displayName": "ゲキカラ",
+        "type": "array"
       }
     ],
     "result": {
