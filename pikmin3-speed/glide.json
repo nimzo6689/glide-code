@@ -23,27 +23,27 @@
       {
         "name": "pikminType",
         "displayName": "PikminType",
-        "type": "Array"
+        "type": "array"
       },
       {
         "name": "pikminSpeed",
         "displayName": "PikminSpeed",
-        "type": "Array"
+        "type": "array"
       },
       {
         "name": "pikminNo",
         "displayName": "PikminNo",
-        "type": "Array"
+        "type": "array"
       },
       {
         "name": "pikminMaturity",
         "displayName": "PikminMaturity",
-        "type": "Array"
+        "type": "array"
       },
       {
         "name": "pikminSpicy",
         "displayName": "PikminSpicy",
-        "type": "Array"
+        "type": "array"
       }
     ],
     "result": {
