@@ -8,5 +8,5 @@ window.function = function (
   pikminMaturity,
   pikminSpicy
 ) {
-  return weight.value + maximumCarryNo.value;
+  return weight.value + maxCarryCount.value;
 };
