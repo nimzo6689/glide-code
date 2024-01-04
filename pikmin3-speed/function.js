@@ -4,5 +4,5 @@ window.function = function (
   pikminType,
   maxCarryCount  
 ) {
-  return weight.value + maxCarryCount.value;
+  return weight.value;
 };
