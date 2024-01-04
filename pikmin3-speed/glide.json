@@ -23,7 +23,10 @@
       {
         "name": "pikminType",
         "displayName": "pikminType",
-        "type": "array"
+        "type": {
+          "kind": "array",
+          "items": "string"
+        }
       }
     ],
     "result": {
