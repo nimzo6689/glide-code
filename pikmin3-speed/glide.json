@@ -24,26 +24,6 @@
         "name": "pikminType",
         "displayName": "pikminType",
         "type": "array"
-      },
-      {
-        "name": "pikminSpeed",
-        "displayName": "pikminSpeed",
-        "type": "array"
-      },
-      {
-        "name": "pikminCount",
-        "displayName": "pikminCount",
-        "type": "array"
-      },
-      {
-        "name": "pikminMaturity",
-        "displayName": "pikminMaturity",
-        "type": "array"
-      },
-      {
-        "name": "pikminSpicy",
-        "displayName": "pikminSpicy",
-        "type": "array"
       }
     ],
     "result": {
