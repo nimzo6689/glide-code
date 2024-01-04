@@ -19,31 +19,6 @@
         "name": "maximumCarryNo",
         "displayName": "MaximumCarryNo",
         "type": "number"
-      },
-      {
-        "name": "pikminType",
-        "displayName": "PikminType",
-        "type": "array"
-      },
-      {
-        "name": "pikminSpeed",
-        "displayName": "PikminSpeed",
-        "type": "array"
-      },
-      {
-        "name": "pikminNo",
-        "displayName": "PikminNo",
-        "type": "array"
-      },
-      {
-        "name": "pikminMaturity",
-        "displayName": "PikminMaturity",
-        "type": "array"
-      },
-      {
-        "name": "pikminSpicy",
-        "displayName": "PikminSpicy",
-        "type": "array"
       }
     ],
     "result": {
