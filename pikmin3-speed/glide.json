@@ -19,11 +19,6 @@
         "name": "maxCarryCount",
         "displayName": "maxCarryCount",
         "type": "number"
-      },
-      {
-        "name": "pikminType",
-        "displayName": "pikminType",
-        "type": "array"
       }
     ],
     "result": {
