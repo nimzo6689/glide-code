@@ -10,16 +10,6 @@ window.function = function (
   pikminMaturity,
   pikminSpicy
 ) {
-  const traceMessage = `itemName = ${JSON.stringify(itemName)}
-  weight = ${JSON.stringify(weight)}
-  maxCarryCount = ${JSON.stringify(maxCarryCount)}
-  pikminType = ${JSON.stringify(pikminType)}
-  pikminSpeed = ${JSON.stringify(pikminSpeed)}
-  pikminCount = ${JSON.stringify(pikminCount)}
-  pikminMaturity = ${JSON.stringify(pikminMaturity)}
-  pikminSpicy = ${JSON.stringify(pikminSpicy)}`;
-  console.log(traceMessage);
-
   const pikmins = pikminType.value.map((type, i) => {
     return {
       type,
@@ -37,9 +27,9 @@ window.function = function (
 
   const allPikminCount = pikmins.map((it) => it.count).reduce((a, x) => a + x);
   const wingedPikminCount = pikmins
-    .fileter((it) => it.type === "羽")
+    .filter((it) => it.type === "羽")
     .map((it) => it.count)
-    .reduce((a, x) => a + x);
+    .reduce((a, x) => a + x, 0);
   const groundedPikminCount = allPikminCount - wingedPikminCount;
 
   if (maxCarryCount.value < wingedPikminCount || maxCarryCount.value < groundedPikminCount) {
@@ -59,6 +49,8 @@ window.function = function (
     return pikmins[0].speed + maturitySpeed[pikmins[0].maturity] + 1.75;
   }
 
-  const allPikminSpeed = pikmins.map((it) => it.speed + maturitySpeed[it.maturity]).reduce((a, x) => a + x);
+  const allPikminSpeed = pikmins
+    .map((it) => (it.speed + maturitySpeed[it.maturity]) * it.count)
+    .reduce((a, x) => a + x);
   return (allPikminSpeed - weight.value + 1) / maxCarryCount.value + 1;
 };
