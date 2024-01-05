@@ -10,6 +10,16 @@ window.function = function (
   pikminMaturity,
   pikminSpicy
 ) {
+  const traceMessage = `itemName = ${JSON.stringify(itemName)}
+  weight = ${JSON.stringify(weight)}
+  maxCarryCount = ${JSON.stringify(maxCarryCount)}
+  pikminType = ${JSON.stringify(pikminType)}
+  pikminSpeed = ${JSON.stringify(pikminSpeed)}
+  pikminCount = ${JSON.stringify(pikminCount)}
+  pikminMaturity = ${JSON.stringify(pikminMaturity)}
+  pikminSpicy = ${JSON.stringify(pikminSpicy)}`;
+  console.log(traceMessage);
+
   const pikmins = pikminType.value.map((type, i) => {
     return {
       type,
