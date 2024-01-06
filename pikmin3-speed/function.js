@@ -50,11 +50,16 @@ window.function = function (
   }
 
   const allPikminSpeed = pikmins
-    .map((it) => (it.speed + maturitySpeed[it.maturity]) * it.count)
+    .map((it) => {
+      if (it.isSpicy === "あり") {
+        it.maturity = "花";
+      }
+      return (it.speed + maturitySpeed[it.maturity]) * it.count;
+    })
     .reduce((a, x) => a + x);
   const result = (allPikminSpeed - weight.value + 1) / maxCarryCount.value + 1;
   if (result < 1) {
     return 1;
   }
-  return result
+  return result;
 };
